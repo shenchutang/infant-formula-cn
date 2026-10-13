@@ -13,8 +13,9 @@ repository: shenchutang/infant-formula-cn
 
 # 主题
 # 如果使用 GitHub Pages 默认支持的主题，可保留 theme；如需自定义，可删除并添加远程主题
+# 20261013
 # theme: minima
-theme: jekyll-theme-tactile
+remote_theme: pages-themes/tactile@v0.2.0
 
 # 语言与编码
 lang: zh-CN
@@ -34,6 +35,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-relative-links
+  # 20261013
+  - jekyll-remote-theme
 
 # 相对链接支持
 relative_links:
