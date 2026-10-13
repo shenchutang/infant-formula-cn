@@ -1,0 +1,103 @@
+# _config.yml
+# github.com/shenjuexiao
+# 20261013
+
+# Jekyll 站点配置
+title: 婴幼儿配方乳粉产品配方注册打分
+description: 婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。
+url: "https://shenchutang.com"
+baseurl: "/infant-formula-cn"
+
+# 仓库信息
+repository: shenchutang/infant-formula-cn
+
+# 主题
+# 如果使用 GitHub Pages 默认支持的主题，可保留 theme；如需自定义，可删除并添加远程主题
+# theme: minima
+theme: tactile
+
+# 语言与编码
+lang: zh-CN
+encoding: utf-8
+timezone: Asia/Shanghai
+
+# Markdown 渲染
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+
+# 相对链接支持
+relative_links:
+  enabled: true
+  collections: true
+
+# 包含文件与目录
+include:
+  - infant-formula_md
+  - infant-formula_pdf
+  - infant-formula-1-single
+  - infant-formula-2-single
+  - infant-formula-3-single
+
+# 排除文件与目录
+exclude:
+  # - README.md
+  - LICENSE
+  - .gitignore
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  # 20261013
+  - infant-formula_json
+  - infant-formula_py
+
+# 默认 Front Matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "infant-formula_md"
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "infant-formula-1-single"
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "infant-formula-2-single"
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "infant-formula-3-single"
+      type: "pages"
+    values:
+      layout: "page"
+
+# 分页（如需要）
+# paginate: 10
+# paginate_path: "/page:num/"
+
+# 永久链接
+permalink: pretty
+
+# GitHub Pages 兼容
+github: [metadata]
