@@ -14,7 +14,7 @@ repository: shenchutang/infant-formula-cn
 # 主题
 # 如果使用 GitHub Pages 默认支持的主题，可保留 theme；如需自定义，可删除并添加远程主题
 # theme: minima
-theme: tactile
+theme: jekyll-theme-tactile
 
 # 语言与编码
 lang: zh-CN
