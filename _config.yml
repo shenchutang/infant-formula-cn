@@ -2,39 +2,80 @@
 # github.com/shenjuexiao
 # 20261014
 
-# _config.yml
-
-title: "婴幼儿配方乳粉产品配方注册打分"
-description: "婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。"
+title: 婴幼儿配方乳粉产品配方注册打分
+description: 婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。
 url: "https://shenchutang.github.io"
 baseurl: "/infant-formula-cn"
 
-remote_theme: pages-themes/tactile@v0.2.0
+theme: minima
 
+# 仓库信息
+repository: shenchutang/infant-formula-cn
+
+# 作者信息（可选）
+author:
+  name: shenchutang
+
+# 主页使用 README.md
+# Jekyll 默认会渲染 index.md 或 README.md 为首页
+# 如果希望显式指定，可创建 index.md 并设置 layout
+# 这里保持默认行为即可
+
+# Markdown 渲染
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 语法高亮
 highlighter: rouge
 
+# 插件
 plugins:
-  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# 让 README.md 作为主页
-include:
-  - README.md
-
-# 可选：排除不需要参与构建的文件
+# 排除文件，避免被 Jekyll 处理
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
   - .bundle
-  - .sass-cache
-  - .jekyll-cache
+  - .git
+  - .github
+  - infant-formula_pdf/
+  - infant-formula-1-single/
+  - infant-formula-2-single/
+  - infant-formula-3-single/
 
-# 可选：仓库内 Markdown 链接、PDF、目录等资源可正常访问
-keep_files:
-  - infant-formula_md
-  - infant-formula_pdf
-  - infant-formula-1-single
-  - infant-formula-2-single
-  - infant-formula-3-single
+# 包含文件（如果需要包含某些被默认排除的文件）
+include:
+  - infant-formula_md/
+
+# minima 主题配置
+minima:
+  skin: auto
+  date_format: "%Y-%m-%d"
+  social:
+    - title: GitHub
+      icon: github
+      url: https://github.com/shenchutang/infant-formula-cn
+
+# SEO 标签
+seo:
+  type: WebSite
+  name: 婴幼儿配方乳粉产品配方注册打分
+  description: 婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。
+  lang: zh-CN
+
+# 分页（可选）
+paginate: 10
+paginate_path: "/page:num/"
+
+# 时区
+timezone: Asia/Shanghai
+
+# 编码
+encoding: utf-8
