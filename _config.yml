@@ -3,107 +3,38 @@
 # 20261014
 
 # _config.yml
-# chat.deepseek.com/a/chat/s/2e7e09f0-d06b-449e-9909-f0bfe4f299d5
 
-# Jekyll 站点配置
-title: 婴幼儿配方乳粉产品配方注册打分
-description: 婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。
-url: "https://shenchutang.com"
+title: "婴幼儿配方乳粉产品配方注册打分"
+description: "婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。"
+url: "https://shenchutang.github.io"
 baseurl: "/infant-formula-cn"
 
-# 仓库信息
-repository: shenchutang/infant-formula-cn
+remote_theme: pages-themes/tactile@v0.2.0
 
-# 主题
-# 如果使用 GitHub Pages 默认支持的主题，可保留 theme；如需自定义，可删除并添加远程主题
-# 20261013
-theme: minima
-# remote_theme: pages-themes/tactile@v0.2.0
-
-# 语言与编码
-lang: zh-CN
-encoding: utf-8
-timezone: Asia/Shanghai
-
-# Markdown 渲染
 markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
+highlighter: rouge
 
-# 插件
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-relative-links
-  # 20261013
   - jekyll-remote-theme
 
-# 相对链接支持
-relative_links:
-  enabled: true
-  collections: true
-
-# 包含文件与目录
+# 让 README.md 作为主页
 include:
+  - README.md
+
+# 可选：排除不需要参与构建的文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+
+# 可选：仓库内 Markdown 链接、PDF、目录等资源可正常访问
+keep_files:
   - infant-formula_md
   - infant-formula_pdf
   - infant-formula-1-single
   - infant-formula-2-single
   - infant-formula-3-single
-
-# 排除文件与目录
-exclude:
-  # - README.md
-  - LICENSE
-  - .gitignore
-  - .github
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - .sass-cache
-  - .jekyll-cache
-  # 20261013
-  - infant-formula_json
-  - infant-formula_py
-
-# 默认 Front Matter
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "infant-formula_md"
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "infant-formula-1-single"
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "infant-formula-2-single"
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "infant-formula-3-single"
-      type: "pages"
-    values:
-      layout: "page"
-
-# 分页（如需要）
-# paginate: 10
-# paginate_path: "/page:num/"
-
-# 永久链接
-permalink: pretty
-
-# GitHub Pages 兼容
-github: [metadata]
