@@ -8,7 +8,7 @@
 # Jekyll 站点配置
 title: 婴幼儿配方乳粉产品配方注册打分
 description: 婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。
-url: "https://shenchutang.github.io"
+url: "https://shenchutang.com"
 baseurl: "/infant-formula-cn"
 
 # 仓库信息
@@ -17,8 +17,8 @@ repository: shenchutang/infant-formula-cn
 # 主题
 # 如果使用 GitHub Pages 默认支持的主题，可保留 theme；如需自定义，可删除并添加远程主题
 # 20261013
-# theme: minima
-remote_theme: pages-themes/tactile@v0.2.0
+theme: minima
+# remote_theme: pages-themes/tactile@v0.2.0
 
 # 语言与编码
 lang: zh-CN
