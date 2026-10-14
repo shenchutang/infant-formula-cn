@@ -4,78 +4,30 @@
 
 title: 婴幼儿配方乳粉产品配方注册打分
 description: 婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。
-url: "https://shenchutang.github.io"
-baseurl: "/infant-formula-cn"
+url: https://shenchutang.github.io
+baseurl: /infant-formula-cn
+lang: zh-CN
 
 theme: minima
 
-# 仓库信息
-repository: shenchutang/infant-formula-cn
-
-# 作者信息（可选）
-author:
-  name: shenchutang
-
-# 主页使用 README.md
-# Jekyll 默认会渲染 index.md 或 README.md 为首页
-# 如果希望显式指定，可创建 index.md 并设置 layout
-# 这里保持默认行为即可
-
-# Markdown 渲染
 markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-
-# 语法高亮
 highlighter: rouge
 
-# 插件
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
 
-# 排除文件，避免被 Jekyll 处理
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - .bundle
-  - .git
-  - .github
-  - infant-formula_pdf/
+include:
+  - README.md
   - infant-formula-1-single/
   - infant-formula-2-single/
   - infant-formula-3-single/
-
-# 包含文件（如果需要包含某些被默认排除的文件）
-include:
   - infant-formula_md/
+  - infant-formula_pdf/
 
-# minima 主题配置
-minima:
-  skin: auto
-  date_format: "%Y-%m-%d"
-  social:
-    - title: GitHub
-      icon: github
-      url: https://github.com/shenchutang/infant-formula-cn
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
 
-# SEO 标签
-seo:
-  type: WebSite
-  name: 婴幼儿配方乳粉产品配方注册打分
-  description: 婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。
-  lang: zh-CN
-
-# 分页（可选）
-paginate: 10
-paginate_path: "/page:num/"
-
-# 时区
-timezone: Asia/Shanghai
-
-# 编码
-encoding: utf-8
