@@ -25,9 +25,9 @@
   - 2 段（539 条）：[infant-formula-2-score.md](infant-formula_md/infant-formula-2-score.md)
   - 3 段（538 条）：[infant-formula-3-score.md](infant-formula_md/infant-formula-3-score.md)
 - 1 段、2 段、3 段婴幼儿配方乳粉营养素连续打分（单个打分）：
-  - 1 段（535 条）：[infant-formula-1-single/](tree/main/infant-formula-1-single)
-  - 2 段（539 条）：[infant-formula-2-single/](tree/main/infant-formula-1-single)
-  - 3 段（538 条）：[infant-formula-3-single/](tree/main/infant-formula-1-single)
+  - 1 段（535 条）：[infant-formula-1-single/](https://github.com/shenchutang/infant-formula-cn/tree/main/infant-formula-1-single)
+  - 2 段（539 条）：[infant-formula-2-single/](https://github.com/shenchutang/infant-formula-cn/tree/main/infant-formula-1-single)
+  - 3 段（538 条）：[infant-formula-3-single/](https://github.com/shenchutang/infant-formula-cn/tree/main/infant-formula-1-single)
 
 ## 📚 参考资料
 
