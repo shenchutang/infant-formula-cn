@@ -4,7 +4,7 @@
 
 title: 婴幼儿配方乳粉产品配方注册打分
 description: 婴幼儿配方乳粉产品配方注册信息对比国标，使用预定方案，模拟打分，仅供娱乐。
-url: https://shenchutang.github.io
+url: https://shenchutang.com
 baseurl: /infant-formula-cn
 lang: zh-CN
 
@@ -30,4 +30,3 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
-
